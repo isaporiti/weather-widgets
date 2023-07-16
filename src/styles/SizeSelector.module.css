@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    justify-content: center;
 }
 
 .size_button {
@@ -17,7 +18,7 @@
 
 .size_button_unselected {
     border: 2px solid black;
-    background-color: white;
+    background-color: transparent;
     color: black
 }
 
