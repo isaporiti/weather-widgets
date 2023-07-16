@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className={inter.className}>
       <Widget size={widgetSize} />
-      <SizeSelector setWidgetSize={setWidgetSize} />
+      <SizeSelector widgetSize={widgetSize} setWidgetSize={setWidgetSize} />
     </main>
   )
 }
