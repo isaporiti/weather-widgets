@@ -1,6 +1,6 @@
-import { Inter } from 'next/font/google'
-import WidgetSelector from './WidgetSelector'
 import { useState } from 'react';
+import { Inter } from 'next/font/google'
+import SizeSelector from './SizeSelector'
 import { WidgetSize } from '@/types/WidgetSize';
 import { SmallWidget } from './SmallWidget';
 import { MediumWidget } from './MediumWidget';
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className={inter.className}>
       <Widget size={widgetSize} />
-      <WidgetSelector setWidgetSize={setWidgetSize} />
+      <SizeSelector setWidgetSize={setWidgetSize} />
     </main>
   )
 }
