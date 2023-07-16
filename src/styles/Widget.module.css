@@ -1,0 +1,32 @@
+.widget {
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.widget__small {
+    height: 10rem;
+    width: 10rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.widget__city_name {
+    font-weight: 400;
+}
+
+.widget__temperature {
+    font-weight: 200;
+    font-size: xxx-large;
+}
+
+.widget__description {
+    font-weight: 300;
+}
+
+.clear_sky {
+    background: linear-gradient(to bottom, #1E90FF, #87CEEB);
+}

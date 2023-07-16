@@ -5,6 +5,7 @@ import { WidgetSize } from '@/types/WidgetSize';
 import { SmallWidget } from './SmallWidget';
 import { MediumWidget } from './MediumWidget';
 import { LargeWidget } from './LargeWidget';
+import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,7 @@ export default function Home() {
   const [widgetSize, setWidgetSize] = useState<WidgetSize>('S');
 
   return (
-    <main className={inter.className}>
+    <main className={`${styles.main} ${inter.className}`}>
       <Widget size={widgetSize} />
       <SizeSelector widgetSize={widgetSize} setWidgetSize={setWidgetSize} />
     </main>
