@@ -2,7 +2,7 @@ import styles from '@/styles/Widget.module.css'
 import { Weather, WeatherType } from '@/types/Weather'
 
 export default function SmallWidget({weather}: {weather: Weather}): JSX.Element {
-  return <main className={`${styles.widget} ${styles.widget__small} ${styles.clear_sky}`}>
+  return <main className={`${styles.widget} ${styles.widget__small} ${skyBackgroundClass(weather.type)}`}>
     <section>
       <div className={styles.widget__city_name}>{weather.city}</div>
       <div className={styles.widget__temperature}>{formatTemperature(weather.temperature.current)}</div>
@@ -16,6 +16,12 @@ export default function SmallWidget({weather}: {weather: Weather}): JSX.Element 
       </section>
     </section>
   </main>
+}
+
+function skyBackgroundClass(weatherType: WeatherType): string {
+  if (['sunny', 'partly_cloudy'].includes(weatherType)) return styles.clear_sky
+
+  return styles.cloudy_sky
 }
 
 function formatTemperature(temperature: number): string {

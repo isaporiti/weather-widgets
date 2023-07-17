@@ -31,6 +31,10 @@
     background: linear-gradient(to bottom, #1E90FF, #87CEEB);
 }
 
+.cloudy_sky {
+    background: linear-gradient(to bottom, #7b7b7b, #b3b3b3);
+}
+
 .widget__high_low {
     display: flex;
     gap: .33rem;

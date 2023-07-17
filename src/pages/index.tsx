@@ -14,7 +14,7 @@ export default function Home() {
   const [widgetSize, setWidgetSize] = useState<WidgetSize>('S');
   const weather: Weather = {
     city: 'Barcelona',
-    type: 'sunny',
+    type: 'rain',
     temperature: {
       current: 28,
       high: 31,
