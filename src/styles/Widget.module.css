@@ -30,3 +30,8 @@
 .clear_sky {
     background: linear-gradient(to bottom, #1E90FF, #87CEEB);
 }
+
+.widget__high_low {
+    display: flex;
+    gap: .33rem;
+}
