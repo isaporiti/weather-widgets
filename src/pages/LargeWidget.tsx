@@ -1,3 +1,3 @@
-export function LargeWidget() {
+export default function LargeWidget() {
   return <>large</>;
 }

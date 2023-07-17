@@ -1,3 +1,3 @@
-export function MediumWidget() {
+export default function MediumWidget() {
   return <>medium</>;
 }
